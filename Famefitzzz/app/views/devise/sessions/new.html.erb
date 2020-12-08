@@ -1,0 +1,87 @@
+<div class="device-wrapper">
+  <div class="sign-up-text-box text-white">
+    <h1 class="mb-4">Connecting companies & freelance developers like never before</h1>
+    <p>Through our marketplace, employers can hire freelancers to do work in areas such as software development, data entry and design right through to engineering, the sciences and sales and marketing.
+    </p>
+  </div>
+  <div class="device-container">
+    <div>
+      
+    </div>
+
+
+
+<div class="newcontact">
+  <div class="wrapper">
+      <div class="form">
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="pageTitle1 title">Login</div>
+      <div class="form-inputs">
+       <%= f.input :username,
+        required: true,
+        autofocus: true
+        %>
+         
+        <%= f.input :email,
+        required: true,
+        autofocus: true,
+        input_html: { autocomplete: "email" } %>
+        <%= f.input :password,
+        required: true,
+        input_html: { autocomplete: "current-password" } %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      </div>
+      
+
+      
+       <div class="form-actions mt-2">
+        <%= f.button :submit, " Log in", class: "btn btn-primary btn-block mb-2" %>
+      </div>
+      <% end %>
+
+      <div class="separator my-3">Don't have an account?</div>
+      <%= render "devise/shared/signup_btn" %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

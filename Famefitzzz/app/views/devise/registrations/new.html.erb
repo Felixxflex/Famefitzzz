@@ -1,0 +1,86 @@
+<div class="device-wrapper">
+  <div class="sign-up-text-box text-white">
+    <h1 class="mb-4">Connecting companies & freelance developers like never before</h1>
+    <p>Through our marketplace, employers can hire freelancers to do work in areas such as software development, data entry and design right through to engineering, the sciences and sales and marketing.
+    </p>
+  </div>
+  <div class="device-container">
+    <div>
+      
+    </div>
+
+
+
+<div class="newcontact">
+  <div class="wrapper">
+      <div class="form">
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="pageTitle1 title">Register</div>
+      
+       <div class="form-inputs">
+       <%= f.input :username,
+        required: true,
+        autofocus: true,
+        class: "form control",
+        type: "text"
+        
+        %>
+         <%= f.input :full_name,
+        required: true,
+        autofocus: true,
+        class: "name formEntry",
+        type: "text"
+        %>
+        <%= f.input :email,
+        required: true,
+        autofocus: true,
+        input_html: { autocomplete: "email" },
+        class: "email1 formEntry",
+        type: "text"
+        %>
+        <%= f.input :password,
+        required: true,
+        # hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+        input_html: { autocomplete: "new-password" } ,
+        class: "name formEntry",
+        type: "text"
+        %>
+        <%= f.input :password_confirmation,
+        required: true,
+        input_html: { autocomplete: "new-password" },
+        class: "name formEntry",
+        type: "text"
+        %>
+       
+      </div>
+
+      
+       <div class="form-actions mt-2">
+        <%= f.button :submit, "Sign up", class: "btn btn-primary btn-block" %>
+      </div>
+      <% end %>
+
+      <div class="separator my-3">Already have an account?</div>
+      <%= render "devise/shared/signin_btn" %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    
+  </div>
+  
+</div>
+
+
+
+
+
+   

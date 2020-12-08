@@ -1,0 +1,17 @@
+<div class="backnav"></div>
+<nav>
+<a href="/">Home</a>
+  <a href="/path/about/page">About</a>
+  <a href="/path/share/page">Share</a>
+  <a href="/path/propositions/page">Proposition</a>
+  <a href="/path/contact/page">Contact</a>
+  <% unless user_signed_in?%>
+        <%= link_to 'Sign up', new_user_registration_path %>
+        <%= link_to 'Sign in', new_user_session_path %>
+        <%else%>
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Dashboard', users_path(current_user) %>
+        <%end%>
+</nav>
+
+<!-- Unsplash copyright -->

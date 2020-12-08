@@ -1,0 +1,7 @@
+if(document.querySelector("#bookmark-<%= @celeb.id %> .fa-bookmark").classList.contains("far")) {
+  document.querySelector("#bookmark-<%= @celeb.id %> .fa-bookmark").classList.remove("far")
+  document.querySelector("#bookmark-<%= @celeb.id %> .fa-bookmark").classList.add("fas")
+} else {
+  document.querySelector("#bookmark-<%= @celeb.id %> .fa-bookmark").classList.add("far")
+  document.querySelector("#bookmark-<%= @celeb.id %> .fa-bookmark").classList.remove("fas")
+}

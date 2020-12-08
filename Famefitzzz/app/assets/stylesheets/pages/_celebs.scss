@@ -1,0 +1,185 @@
+.formceleb {
+    margin-top: 20rem;
+}
+
+.h1-show {
+    margin-top: 16rem;
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 6rem;
+}
+
+.h2-show {
+    margin-top: 14rem;
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 7rem;
+}
+
+.h3-show {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 35rem;
+    font-size: 10rem;
+}
+
+.offers.index {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    margin-left: -5rem
+}
+
+.title-info {
+    z-index: 100;
+    position: relative;
+    margin-left: -19rem;
+    margin-top: 24rem;
+}
+
+.indexpics {
+    height: 18rem;
+    margin-top: 5rem;
+    width: 23rem;
+    margin-bottom: 1rem;
+    margin-left: -3rem;
+}
+
+.h-100 {
+    /* height: 100% !important; */
+    height: 50rem !important;
+}
+
+.w-100 {
+    /* width: 100% !important; */
+    width: 58rem !important;
+}
+
+.img-show {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: whitesmoke;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+}
+
+.flex-1 {
+    margin-top: 5rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    border: 1px solid #10DAC3;
+    border-radius: 4.25rem;
+    margin-top: 10rem !important;
+}
+
+.indexpics2 {
+    height: 17rem;
+    margin-top: 5rem;
+    width: 33rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.indexpics_nice {
+    height: 28rem;
+    margin-top: 5rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+}
+
+.heading a {
+    color: whitesmoke !important;
+    background-color: transparent;
+    font-size: 2rem !important;
+    font-family: 'Syne Mono', monospace;
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+    width: 14rem;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    border-radius: 4.25rem;
+    margin-top: 10rem !important;
+}
+
+.w-100 {
+    /* width: 100% !important; */
+    width: 58rem !important;
+    margin-top: 6rem;
+    margin-right: 2rem;
+}
+
+.link1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+// .offers.index {
+//     display: grid;
+//     grid-template-columns: 550px 550px;
+// }
+.newimgceleb {
+    vertical-align: middle;
+    border-style: none;
+    width: 64rem;
+}
+
+.containerbanner {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606770172/iMac_-_1_yldbzs.png') !important;
+    background-size: cover;
+}
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.celebs-index {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606940411/iMac_-_2_r3fktu.png');
+    background-size: cover;
+}
+
+.celebs-new {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606940411/iMac_-_2_r3fktu.png');
+    background-size: cover;
+}
+
+.celebs-show {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606940411/iMac_-_2_r3fktu.png');
+    background-size: cover;
+}
+
+.pages-share {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606940411/iMac_-_2_r3fktu.png');
+    background-size: cover;
+}
+
+.pages-about {
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606940411/iMac_-_2_r3fktu.png');
+    background-size: cover;
+}

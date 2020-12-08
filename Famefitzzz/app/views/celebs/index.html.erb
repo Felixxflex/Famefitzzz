@@ -1,0 +1,93 @@
+
+
+ <div class="wrapper offers">
+  <div class="container offer">
+    <div class="offers-index-search">
+      <div class="offers-index-searchbarbut">
+
+
+
+ 
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card1 card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+
+                                    </div>
+                                    <!--end of col-->
+                                    <%= search_form_for @q do |f| %>
+                                    <div class="col">
+                                    <%= f.label :name, class: 'text-white', placeholder: "Travis Scott" %>
+                                    <%= f.text_field :name_cont, class: 'form-control' %>
+                                    <%= f.label :date, class: 'text-white',  placeholder: "2020-10-17" %>
+                                    <%= f.text_field :date_cont, class: 'form-control' %>
+                                    </div>
+                                   
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                    <%= f.submit class: 'btn btn-success btn-block', id: 'locogobtn', remote: :true %>
+                                    <%= link_to "Clear", celebs_path, class: "btn btn-danger btn-block", id: 'locogobtn', remote: :true %>
+                                    <% end %>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+
+    
+     
+        
+            
+         
+     <div class="offers index">
+        <%@celebs.each do |celeb|%>
+        <div class="mx-auto">
+            <div class="row ">
+            
+            <div  class="celebrang">
+           
+            <%= cl_image_tag celeb.photos.first.key, crop: :fill, class: "indexpics"%> 
+           
+           
+            </div>
+            <div class="title-info">
+              <div class="card-title" style="margin-bottom: 5px">
+                <h6 class="heading" style="color: black;"><%= link_to celeb_path(celeb) do %>
+                  <%= celeb.name %>
+                  <% end %></h6>
+                 
+                </div>
+        
+                <div class="offer-details">
+                 <span class="badge badge-pill badge-dark ml-1 p-2"><%=celeb.date%></span>
+              
+                
+              </div>
+            </div>
+            </div>
+            </div>
+              <%end%>   
+            </div>
+            </div>
+
+             
+               
+            </div>
+          </div>
+        
+
+     
+
+
+
+
+
+
